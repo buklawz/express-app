@@ -39,6 +39,10 @@ app.get("/help", (req, res) => {
   res.send("Help Page");
 });
 
+app.get("/contact", (req, res) => {
+  res.end("<h1> Contact us</h1>");
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
